@@ -1,0 +1,17 @@
+# first step is to add basic operations to our calculator
+# we will add addition, subtraction, multiplication and division
+# we will also add a function to clear the calculator
+
+# we will also add a function to display the result
+# we will also add a function to display the history of calculations
+# we will also add a function to display the menu
+# we will also add a function to display the help
+# we will also add a function to display the version
+# we will also add a function to display the author
+# we will also add a function to display the license
+
+# we will also add a function to display the date and time
+# we will also add a function to display the current working directory
+# we will also add a function to display the current user
+# we will also add a function to display the current operating system
+# we will also add a function to display the current python version
