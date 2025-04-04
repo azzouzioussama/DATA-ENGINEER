@@ -24,3 +24,13 @@ def plot_points(points: List[Tuple[float, float]], title: str = "Points Plot") -
         points (List[Tuple[float, float]]): List of points to plot.
         title (str): Title of the plot.
     """
+    x_coords = [point[0] for point in points]
+    y_coords = [point[1] for point in points]
+    
+    plt.figure(figsize=(8, 6))
+    plt.scatter(x_coords, y_coords, color='blue', marker='o')
+    plt.title(title)
+    plt.xlabel('X-axis')
+    plt.ylabel('Y-axis')
+    plt.grid(True)
+    plt.show()
