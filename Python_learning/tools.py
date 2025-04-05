@@ -34,3 +34,21 @@ def plot_points(points: List[Tuple[float, float]], title: str = "Points Plot") -
     plt.ylabel('Y-axis')
     plt.grid(True)
     plt.show()
+
+def calculate_mean(points: List[Tuple[float, float]]) -> Tuple[float, float]:
+    """
+    Calculate the mean of a list of points in 2D space.
+    
+    Args:
+        points (List[Tuple[float, float]]): List of points to calculate the mean.
+        
+    Returns:
+        Tuple[float, float]: The mean point (mean_x, mean_y).
+    """
+    if not points:
+        return (0.0, 0.0)
+    
+    mean_x = np.mean([point[0] for point in points])
+    mean_y = np.mean([point[1] for point in points])
+    
+    return (mean_x, mean_y)
