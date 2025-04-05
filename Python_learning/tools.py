@@ -52,3 +52,20 @@ def calculate_mean(points: List[Tuple[float, float]]) -> Tuple[float, float]:
     mean_y = np.mean([point[1] for point in points])
     
     return (mean_x, mean_y)
+def calculate_variance(points: List[Tuple[float, float]]) -> float:
+    """
+    Calculate the variance of a list of points in 2D space.
+    
+    Args:
+        points (List[Tuple[float, float]]): List of points to calculate the variance.
+        
+    Returns:
+        float: The variance of the points.
+    """
+    if not points:
+        return 0.0
+    
+    mean_x, mean_y = calculate_mean(points)
+    variance = np.mean([(point[0] - mean_x) ** 2 + (point[1] - mean_y) ** 2 for point in points])
+    
+    return variance
